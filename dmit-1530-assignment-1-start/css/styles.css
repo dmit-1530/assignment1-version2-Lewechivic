@@ -2,16 +2,509 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
+    --blue-grey-800: #37474F;
     --blue-grey-900: #263238;
+    --chinese-black: #111111;
+}
+
+.container {
+    margin: 0 auto;
+    font-size: 100%;
 }
 
 body {
     color: #000;
-    text-align: center; 
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--blue-grey-50);
 }
 
-header, footer {
-    background-color: var(--blue-grey-50);
+a {
+    all: unset;
+}
+
+h2 {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: var(--chinese-black);
     color: #fff;
-    padding: 2rem 4rem;   
+    /* padding: 2rem 4rem;*/
+}
+
+/* Header */
+
+h1,
+.logo h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 3.5rem;
+}
+
+header {
+    padding: 3rem 2.8125rem 1.75rem;
+    margin: 0 auto;
+}
+
+header ul,
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 91px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 300px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.6rem;
+}
+
+/* Section 1 */
+
+.hero-container,
+.gallery-first-section {
+    background-color: var(--blue-grey-50);
+}
+
+.hero-section,
+.gallery-first-section {
+    padding: 4rem 2rem 4rem;
+}
+
+
+.hero-section p {
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+    margin: 2rem 0 3rem;
+}
+
+.button {
+    background-color: var(--chinese-black);
+    color: var(--blue-grey-50);
+    padding: 1rem 1.125rem;
+    border-radius: 0.375rem;
+}
+
+.hero-section img {
+    border-radius: 0.5rem;
+    margin-top: 3.5rem;
+}
+
+.gallery-first-section img {
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+}
+
+.gallery-first-section>div>section:first-of-type img {
+    margin-bottom: 3rem;
+}
+
+.gallery-first-section h3,
+.gallery-first-section p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-first-section h3 {
+    margin-bottom: 1.5rem;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: left;
+    margin: 1rem 0 2.5rem;
+}
+
+/* Section 2 */
+
+span {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-section {
+    background-color: white;
+    padding: 4rem 2rem;
+}
+
+.about-section h3 {
+    font-size: 1.25rem;
+}
+
+.about-section div {
+    margin-top: 4rem;
+}
+
+.about-section div section,
+.services p {
+    margin-top: 1.5rem;
+}
+
+.mission-statement {
+    background-color: white;
+    padding: 4rem 2rem;
+}
+
+/* Section 3 */
+
+.client-review,
+.about-gallery {
+    background-color: #78909C;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.client-review h2 {
+    margin-bottom: 3rem;
+}
+
+.client-review p:last-child {
+    color: var(--blue-grey-50);
+}
+
+.about-gallery {
+    display: block;
+    text-align: left;
+}
+
+.about-gallery p {
+    margin: 1.5rem 0 0;
+}
+
+/* Section 4 */
+
+.services {
+    background-color: var(--blue-grey-100);
+    padding: 4rem 2rem;
+}
+
+.services h3 {
+    font-size: 1.25rem;
+}
+
+.services div {
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.list-heading {
+    font-size: 1rem;
+}
+
+.services ul {
+    padding-left: 1.5rem;
+}
+
+.services li {
+    margin-bottom: 1.5rem;
+}
+
+.services div section:last-child {
+    margin-top: 2.5rem;
+}
+
+.services img {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Section 5 */
+
+.cta-container,
+.features-section {
+    background-color: var(--blue-grey-800);
+    padding: 4rem 2rem;
+}
+
+.cta-container div {
+    background-color: white;
+    padding: 4rem 1rem 4.5rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+.cta-container p {
+    margin: 1rem 0 2.5rem;
+}
+
+.features-section {
+    color: white;
+    text-align: left;
+}
+
+.features-section img {
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+.features-section ul {
+    margin: 2.5rem 0 0;
+    padding-left: 1.5rem;
+}
+
+.features-section ul li {
+    margin-top: 2rem;
+}
+
+.features-section p {
+    margin: 1rem 0 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 4rem 1.875rem 4.625rem;
+}
+
+.logo h2 {
+    font-weight: bold;
+}
+
+footer h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    color: var(--blue-grey-200);
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+footer div p {
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 3rem 0 2rem;
+}
+
+footer nav ul {
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+footer nav li {
+    margin-bottom: 1rem;
+}
+
+/* Medium View (768px) */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-section>div>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .about-section>div>div>section {
+        width: calc((100% / 2) - (1rem / 2));
+        margin-top: 0;
+    }
+
+    .services-subsection {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .residential-architecture,
+    .commercial-architecture {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin: 0;
+    }
+
+    .commercial-architecture {
+        flex-direction: row-reverse;
+    }
+
+    .residential-architecture div,
+    .commercial-architecture div,
+    .services-subsection img {
+        width: calc((100% / 2) - (1rem / 2));
+        margin: 0;
+    }
+
+    .services>div section:last-child {
+        margin: 0;
+    }
+
+    .cta-container div {
+        max-width: 28.875rem;
+    }
+
+    footer>section>div {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .footer-links {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin: 0 0 3rem;
+    }
+
+    footer>section>p {
+        width: 28.875rem;
+        margin: 0 auto;
+    }
+
+    .gallery-first-section>div>div>section {
+        display: flex;
+        gap: 1.5rem;
+        text-align: left;
+        align-items: center;
+    }
+
+    .gallery-first-section img {
+        margin: 0;
+    }
+
+    .gallery-first-section>div>div>section:first-child img,
+    .gallery-first-section>div>div>section:last-child div,
+    figure {
+        width: calc((100% / 2) - (1.5rem / 2));
+    }
+
+    .gallery-first-section>div>div>section:last-child {
+        flex-direction: row-reverse;
+    }
+
+    .gallery-first-section>div>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .about-gallery h2 {
+        text-align: center;
+    }
+
+    .about-gallery>div>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .about-gallery p {
+        width: calc((100% / 2) - (2rem / 2))
+    }
+
+    .about-gallery p:nth-child(3),
+    .about-gallery p:last-child {
+        margin: 0;
+    }
+
+    .features-section h2 {
+        text-align: center;
+    }
+
+    .features-section>div>div {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+/* Large View (1440px) */
+
+@media screen and (max-width: 1440px) {
+    .inner-container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    header .inner-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .about-section {
+        margin: unset;
+        padding-top: 1rem;
+    }
+
+    .about-section>div>div {
+        gap: 2rem;
+    }
+
+    .about-section>div>div>section {
+        width: calc((100% / 3) - (6rem / 3));
+    }
+
+    .services {
+        padding-top: 1rem;
+    }
+
+    .services>div>div {
+        text-align: center;
+    }
+
+    .services-subsection {
+        flex-wrap: nowrap;
+    }
+
+    .residential-architecture,
+    .commercial-architecture {
+        flex-direction: column;
+    }
+
+    .residential-architecture div,
+    .commercial-architecture div,
+    .services-subsection img {
+        width: unset
+    }
+
+    .cta-container div {
+        max-width: 42.25rem;
+    }
+
+    footer div p {
+        width: 20.375rem;
+    }
+
+    footer>section>p {
+        width: 42.25rem;
+    }
+
 }
